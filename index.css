@@ -1,5 +1,5 @@
     body{
-        background-color: rgba(128, 128, 128, 0.138);
+        background-color: rgba(128, 128, 128, 0.448);
     }
     .main{
         margin-top: 20px;
@@ -25,7 +25,7 @@
         margin-bottom: 15px;
     }
     button{
-        background-color: rgba(90, 219, 90, 0.85);
+        background-color: rgba(10, 10, 10, 0.578);
         border: none;
         padding: 10px 20px;
         border-radius: 10px;
