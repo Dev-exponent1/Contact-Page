@@ -1,0 +1,48 @@
+    body{
+        background-color: rgba(128, 128, 128, 0.138);
+    }
+    .main{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .ampersand{
+        color: rgba(90, 219, 90, 0.85);
+    }
+    .input{
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+    }
+    .sub-main{
+        text-align: left;
+        font-size: 10px;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+    .sub-main1{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    button{
+        background-color: rgba(90, 219, 90, 0.85);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .sub{
+        margin-left : 0%;
+        background-color:navy;
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }

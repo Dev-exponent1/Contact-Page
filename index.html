@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Support page</title><link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="main col-lg-10">
+                <h6>Contact us</h6>
+                <h2><b>Contact <span class="ampersand">&</span> Support</b></h2>
+                <form method="post">
+                    <div class="sub-main row justify-content-center" style="margin-top: 40px;">
+                            <div class="col-lg-5">
+                                    <label for="First name">FIRST NAME</label>
+                                    <input class="input form-control" type="text" style="box-shadow: none" placeholder="Enter your first name here" required >
+                            </div>
+                            <div class="col-lg-5">
+                                <label for="Surname">SURNAME</label>
+                                <input class="input form-control" type="text" style="box-shadow: none;" placeholder="Enter your surname here" required>
+                            </div>
+                    </div>
+                    <div class="sub-main row justify-content-center">
+                        <div class="col-lg-5">
+                                <label for="Email">EMAIL</label>
+                                <input class="input form-control" type="text" style="box-shadow: none" placeholder="Enter your email" required> 
+                        </div>
+                        <div class="col-lg-5">
+                            <label for="Phone">PHONE</label>
+                            <input class="input form-control" type="text" style="box-shadow: none;" placeholder="Enter your phone number" required>
+                        </div>
+                </div>
+                <div class="sub-main row justify-content-center">
+                    <div class="col-lg-5">
+                            <label for="PASSWORD">PASSWORD</label>
+                            <input class="input form-control" type="password" style="box-shadow: none" placeholder="Enter a strong password" required> 
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="Confirm password">CONFIRM PASSWORD</label>
+                        <input class="input form-control" type="text" style="box-shadow: none;" placeholder="Confirm your password" required>
+                    </div>
+            </div>
+            <div class="sub-main row justify-content-center">
+              <div class="col-lg-10">
+              <textarea style="width:100%; height: 150px; font-size: 16px; box-shadow: none;" placeholder="Enter your message here" required></textarea>
+            </div>
+          </div>
+            <div>
+                <button>SUBMIT</button>
+            </div>
+                </form>
+                <a href="#" style="margin-right: 20px; display: block;" data-bs-toggle="modal" data-bs-target="#Signup">Don't have an account?</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                    <div>
+                        <form method="post"> 
+                            <h3 style="text-align: center;">Login</h3>
+                            <div class="row">
+                            <input type="email" class="form-control" placeholder="Input your email" style="margin-bottom: 20px;" required>
+                            <input type="password" class="form-control" placeholder="Input your Password"style="margin-bottom: 20px;" required>
+                            <input type="password" class="form-control" placeholder="Confirm your Password" required>
+                        </div>
+                        <button>Submit</button>
+                  </form>
+                </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            </div>
+      </div>
+      <div class="modal fade" id="Signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                    <div>
+                        <form method="post"> 
+                            <h3 style="text-align: center;">Sign Up</h3>
+                            <div class="row">
+                              <input type="text" class="form-control" placeholder="Enter your name" style="margin-bottom: 20px;" required>
+                            <input type="number" class="form-control" placeholder="Input your Password"style="margin-bottom: 20px;" required>
+                            <input type="date" class="form-control" placeholder="Confirm your Password" style="margin-bottom: 20px;" required>
+                            <div style="margin-bottom:20px">
+                            <label for="Gender">Gender</label><br>
+                            <input type="radio" name="gender"> <label for="Male">Male</label>
+                            <input type="radio" name="gender"> <label for="fmale">Female</label>
+                            <input type="radio" name="gender" > <label for="Custom">Custom</label>
+                          </div>
+                            <input type="email" class="form-control" placeholder="Input your email" style="margin-bottom: 20px;" required>
+                            <input type="password" class="form-control" placeholder="Create a password"style="margin-bottom: 20px;" required>
+                            <input type="password" class="form-control" placeholder="Confirm your Password" required>
+                        </div>
+                        <button>Submit</button>
+                  </form>
+                </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            </div>
+      </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html
