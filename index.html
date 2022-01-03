@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact and Support page</title><link rel="stylesheet" href="css/bootstrap.min.css">
+     <title>Contact and Support page</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -27,21 +28,28 @@
                     <div class="sub-main row justify-content-center">
                         <div class="col-lg-5">
                                 <label for="Email">EMAIL</label>
-                                <input class="input form-control" type="text" style="box-shadow: none; margin-bottom: 15px;" placeholder="Enter your email" required> 
+                                <input class="input form-control" type="email" style="box-shadow: none; margin-bottom: 15px;" placeholder="Enter your email" required> 
                         </div>
                         <div class="col-lg-5">
                             <label for="Phone">PHONE</label>
-                            <input class="input form-control" type="text" style="box-shadow: none;" placeholder="Enter your phone number" required>
+                            <input class="input form-control"  type="text" pattern="[0-9]{11}" style="box-shadow: none;" id="phone" placeholder="Enter your phone number" title="Enter Valid mobile Number" required>
                         </div>
                 </div>
                 <div class="sub-main row justify-content-center">
                     <div class="col-lg-5">
                             <label for="PASSWORD">PASSWORD</label>
-                            <input class="input form-control" type="password" style="box-shadow: none; margin-bottom: 15px;" placeholder="Enter a strong password" required> 
+                            <input class="input form-control" type="password" id="psw" style="box-shadow: none; margin-bottom: 10px;" placeholder="Enter a strong password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+                            <div id="message">
+                              <h6> The password must contain the following:</h6>
+                              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                              <p id="number" class="invalid">A <b>number</b></p>
+                              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                            </div>
                     </div>
                     <div class="col-lg-5">
                         <label for="Confirm password">CONFIRM PASSWORD</label>
-                        <input class="input form-control" type="text" style="box-shadow: none;" placeholder="Confirm your password" required>
+                        <input class="input form-control" type="password" id="cpsw" style="box-shadow: none;" placeholder="Confirm your password" title="Must match with the password" required>
                     </div>
             </div>
             <div class="sub-main row justify-content-center">
@@ -52,6 +60,7 @@
             <div>
                 <button>SUBMIT</button>
             </div>
+            <div id="message"></div>
                 </form>
                 <a href="#" style="margin-right: 20px; display: block;" data-bs-toggle="modal" data-bs-target="#Signup">Don't have an account?</a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a>
@@ -71,9 +80,9 @@
                         <form method="post"> 
                             <h3 style="text-align: center;">Login</h3>
                             <div class="row">
-                            <input type="email" class="form-control" placeholder="Input your email" style="margin-bottom: 20px;" required>
-                            <input type="password" class="form-control" placeholder="Input your Password"style="margin-bottom: 20px;" required>
-                            <input type="password" class="form-control" placeholder="Confirm your Password" required>
+                            <input type="text" class="form-control" placeholder="Enter your Username" style="margin-bottom: 20px;" required>
+                            <input type="password" class="form-control" id="psw1" placeholder="Input your Password"style="margin-bottom: 20px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            <input type="password" class="form-control" id="cpsw1" placeholder="Confirm your Password" title="Must match with password" required>
                         </div>
                         <button>Submit</button>
                   </form>
@@ -98,18 +107,20 @@
                         <form method="post"> 
                             <h3 style="text-align: center;">Sign Up</h3>
                             <div class="row">
-                              <input type="text" class="form-control" placeholder="Enter your name" style="margin-bottom: 20px;" required>
-                              <input type="text" class="form-control" placeholder="Enter your mobile number" value="+234" style="margin-bottom: 20px;" required>
-                            <input type="date" class="form-control" placeholder="Date of birth" style="margin-bottom: 20px;" required>
+                              <input type="text" class="form-control" placeholder="Enter your full name" style="margin-bottom: 20px;" required>
+                              <input type="text" class="form-control" placeholder="Enter your mobile numbe" pattern="[0-9 ]{11}" style="margin-bottom: 20px;" title="Enter Valid number"  required>
+                            <input type="date" class="form-control" style="margin-bottom: 20px;" required>
                             <div style="margin-bottom:20px">
                             <label for="Gender">Gender</label><br>
                             <input type="radio" name="gender"> <label for="Male">Male</label>
                             <input type="radio" name="gender"> <label for="fmale">Female</label>
                             <input type="radio" name="gender" > <label for="Custom">Custom</label>
                           </div>
-                            <input type="email" class="form-control" placeholder="Input your email" style="margin-bottom: 20px;" required>
-                            <input type="password" class="form-control" placeholder="Create a password"style="margin-bottom: 20px;" required>
-                            <input type="password" class="form-control" placeholder="Confirm your Password" required>
+                            <input type="email" class="form-control" placeholder="Input your email" id style="margin-bottom: 20px;" required>
+                            
+                            <input type="password" class="form-control" placeholder="Create a password" id="psw2" style="margin-bottom: 20px;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            
+                            <input type="password" class="form-control" placeholder="Confirm your Password" id="cpsw2"  title="Must match with password" required>
                         </div>
                         <button>Submit</button>
                   </form>
@@ -122,5 +133,6 @@
             </div>
       </div>
     <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html
