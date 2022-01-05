@@ -54,7 +54,7 @@
             </div>
             <div class="sub-main row justify-content-center">
               <div class="col-lg-10">
-              <textarea style="width:100%; height: 150px; font-size: 16px; box-shadow: none;" placeholder="Enter your message here" required></textarea>
+              <textarea style="outline: none; width:100%; height: 150px; font-size: 16px; box-shadow: none;" shadow="none"  placeholder="Enter your message here" required></textarea>
             </div>
           </div>
             <div>
@@ -77,7 +77,8 @@
               <div class="container">
                   <div class="row">
                     <div>
-                        <form method="post"> 
+                        <form  method="post">
+                        
                             <h3 style="text-align: center;">Login</h3>
                             <div class="row">
                             <input type="text" class="form-control" placeholder="Enter your Username" style="margin-bottom: 20px;" required>
@@ -85,6 +86,7 @@
                             <input type="password" class="form-control" id="cpsw1" placeholder="Confirm your Password" title="Must match with password" required>
                         </div>
                         <button>Submit</button>
+                        <a href="#" style="margin-right: 20px; display: block; color: blue;" data-bs-toggle="modal" data-bs-target="#Signup">Don't have an account?</a>
                   </form>
                 </div>
                     </div>
@@ -123,6 +125,9 @@
                             <input type="password" class="form-control" placeholder="Confirm your Password" id="cpsw2"  title="Must match with password" required>
                         </div>
                         <button>Submit</button>
+                        <a href="#" data-bs-toggle="modal" style="color: blue; display: block;" data-bs-target="#exampleModal">Already have an account? Log in</a>
+
+                      
                   </form>
                 </div>
                     </div>

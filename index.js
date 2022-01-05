@@ -105,3 +105,7 @@ function validatePassy(){
 
 passy.onchange = validatePassy;
 confirm_passy.onkeyup = validatePassy;
+
+
+
+
